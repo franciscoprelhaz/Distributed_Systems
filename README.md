@@ -1,6 +1,6 @@
-# Projeto de Sistemas Distribuídos 2015-2016 #
+# Project of Distributed Systems Instituto Superior Técnico 2015-2016 #
 
-Grupo de SD 28 - Campus Alameda
+Group de Distributed Systems 28 - Campus Alameda
 
 Joaquim Esteves, 77020 - joaquimbve@hotmail.com
 
@@ -10,33 +10,33 @@ Tomas Marques, 75344 - tom_as_sm@hotmail.com
 ... ... ...
 
 
-Repositório:
+Repo:
 [tecnico-distsys/A_28-project](https://github.com/tecnico-distsys/A_28-project/)
 
 -------------------------------------------------------------------------------
 
-## Instruções de instalação 
+## Installation Instructions
 
 
-### Ambiente
+### Environment
 
-[0] Iniciar sistema operativo
+[0] Initiate Operating System
 
-A implementação foi feita em Windows. Assume-se que o resultado seja o mesmo em Linux
+The implementation was done in Windows. We assume the output will be the same in any UNIX based System
 
 
-[1] Iniciar servidores de apoio
+[1] Initiate support systems
 
 JUDDI:
 
 
 
-[2] Obter código fonte do projeto (versão entregue)
+[2] Get base code
 
 git clone -b SD_R1 https://github.com/tecnico-distsys/A_28-project/
 
 
-[3] Instalar módulos de bibliotecas auxiliares
+[3] Install auxiliar modules
 
 ```
 cd uddi-naming
@@ -51,19 +51,19 @@ mvn clean install
 
 -------------------------------------------------------------------------------
 
-### Serviço TRANSPORTER
+### Transporter Service
 
-[1] Construir e executar **servidor**
+[1] Build and execute **server**
 
 ```
 cd transporter-ws
 mvn clean install
 mvn exec:java
 ```
-Para executar outra transportadora correr o comando:
-mvn exec:java -Dws.i=2 (ou outro número qualquer)
+To execute another transporter run the following command:
+mvn exec:java -Dws.i=2 //(or any other number)
 
-[2] Construir **cliente** e executar testes
+[2] Build **client** and execute tests
 
 ```
 cd transporter-ws-cli
@@ -75,9 +75,9 @@ mvn clean install
 
 -------------------------------------------------------------------------------
 
-### Serviço BROKER
+### Broker Service
 
-[1] Construir e executar **servidor**
+[1] Build and execute **server**
 
 ```
 cd broker-ws
@@ -86,7 +86,7 @@ mvn exec:java
 ```
 
 
-[2] Construir **cliente** e executar testes
+[2] Build **client** and execute tests
 
 ```
 cd broker-ws-cli
@@ -97,4 +97,4 @@ mvn exec:java
 ...
 
 -------------------------------------------------------------------------------
-**FIM**
+**The end**
